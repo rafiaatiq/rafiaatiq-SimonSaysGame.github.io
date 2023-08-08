@@ -117,7 +117,23 @@ for(btn of allBtns){
 // MEDIA QURIES ----
 
 function myFunction(x) {
-    if (x.matches) { // If media query matches
+    if (x[0].matches) { // If media query matches
+        let button = document.createElement("button");
+        button.innerText = "Click to Start Game";
+        button.classList.add("mqBtn");
+        document.querySelector("body").append(button);
+        
+        h2.innerText = "Click Button start the Game!";
+        button.addEventListener("click", function(){
+            if(started == false){                        
+                console.log("game Started");
+                started = true;
+            }
+            
+            levelUp();   
+        });
+    } 
+    if (x[1].matches) { // If media query matches
         let button = document.createElement("button");
         button.innerText = "Click to Start Game";
         button.classList.add("mqBtn");
@@ -135,6 +151,9 @@ function myFunction(x) {
     } 
 }
   
-let x = window.matchMedia("(max-width: 390px)");
+let x = [window.matchMedia("(max-width: 390px)"), 
+        window.matchMedia("(max-width: 414px)")
+];
 
 myFunction(x); // Call listener function at run time
+

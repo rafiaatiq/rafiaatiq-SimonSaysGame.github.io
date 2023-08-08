@@ -116,6 +116,7 @@ body{
     width: 60%;
     font-size: 1rem;
 }
+
 @media  (max-width:390px) {
     body{
         background-color: aliceblue;
@@ -172,12 +173,13 @@ body{
     }
     
 }
+
 @media  (max-width:375px){
     body{
        background-color: aliceblue;
     }
     .center{
-        position: absolute;
+        position: fixed;
         width: 100px;
         height: 100px;
         top: 307px;
@@ -199,3 +201,57 @@ body{
         left: 75px;
     }
 } 
+
+@media  (min-width:414px){
+    .headings{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .headings .h2{
+        font-size:0.75rem;
+        text-align: center;
+    }
+    .h1{
+        text-align: center;
+    }
+    .btn{
+        height: 120px;
+        width: 120px;
+        /* border-radius: 20%; */
+        border: 6px solid black;
+        /* margin: 0.55rem; */
+    }
+    .center{
+        position: fixed;
+        width: 120px;
+        height: 120px;
+        top: 310px;
+        left: 152px;
+    }
+    .conatiner-black{
+        position: fixed;
+        right: 50px;
+        height: 300px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        z-index: 1;
+        /* margin-top: 8rem; */
+    }
+    .scores h3{
+        position: absolute;
+        bottom:110px;
+    }
+    .score-2 h4{
+        position: absolute;
+        bottom: 60px;
+        left: 4rem;
+        font-size:1.5rem ;
+    }
+    
+}
