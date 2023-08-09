@@ -176,17 +176,20 @@ body{
 }
 
 /* Iphone SE */
-
 @media  (max-width:375px){
     body{
        background-color: aliceblue;
+    }
+    .headings .h2{
+        font-size: 0.75rem;
+        margin-top: -0.55rem;
     }
     .center{
         position: fixed;
         width: 100px;
         height: 100px;
-        top: 307px;
-        left: 140px;
+        top: 300px;
+        left: 138px;
     }
     .scores h3{
         position: absolute;
@@ -200,7 +203,7 @@ body{
     }
     .mqBtn{
         position: absolute;
-        bottom: 410px;
+        bottom: 440px;
         left: 75px;
     }
 } 
