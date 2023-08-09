@@ -117,6 +117,7 @@ body{
     font-size: 1rem;
 }
 
+/* Iphone 12 pro */
 @media  (max-width:390px) {
     body{
         background-color: aliceblue;
@@ -174,6 +175,8 @@ body{
     
 }
 
+/* Iphone SE */
+
 @media  (max-width:375px){
     body{
        background-color: aliceblue;
@@ -197,10 +200,12 @@ body{
     }
     .mqBtn{
         position: absolute;
-        bottom: 470px;
+        bottom: 460px;
         left: 75px;
     }
 } 
+
+/* Iphone XR */
 
 @media  (min-width:414px){
     .headings{
@@ -253,5 +258,8 @@ body{
         left: 4rem;
         font-size:1.5rem ;
     }
-    
+    .mqBtn{
+        position: absolute;
+        bottom: 130px;
+    }
 }
